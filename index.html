@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="utf-8">
+		<title>Perceptron</title>
+		<link rel="stylesheet" href="css/bootstrap.css">		
+		<link rel="stylesheet" href="css/custom.css">		
+	</head>
+	<body onload="init();">
+		<div class="container">	
+				<div class="title col-md-12">
+					<h1>Le Perceptron</h1>
+				</div>	
+				<div class="col-md-4">
+					<div class="row">			
+						<h4 class="underlined">Configuration</h4>
+						<div class="input-group">
+							<input id="minSeuil" type="text" value="4">						
+							<button type="button" onclick="updateSeuil()">Seuil d'activation</button>
+						</div>
+						<hr>
+					</div>
+					<div class="row">
+						<h4 class="underlined">Apprentissage</h4>
+						<button class="btn btn-primary" type="button" onclick="resetCanvas()">Reinitialiser le canvas</button>
+						<br><br>
+						<div class="input-group">
+							<input id="inputNumber" type="text">
+							<button type="button" onclick="learnClicked()">Learn</button>
+						</div>
+						<div class="input-group">
+							<input id="outputNumber" type="text">
+							<button type="button" onclick="processClicked()">Process</button>
+						</div>
+						<hr>
+					</div>
+					<div class="row">			
+						<h4 class="underlined">Equipe</h4>
+						<ul>
+							<li>Manuel Malou</li>
+							<li>Louis Rabinovitch</li>
+							<li>Maxime Merigeaux</li>
+							<li>Julien Riffard</li>
+						</ul>
+						<hr>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<canvas id="canvas" width="300" height="400"></canvas>
+				</div>	
+				<div class="col-md-4">
+					<h4 class="underlined">Activation</h4>
+					<div>
+						<ul id="activationRates">
+						</ul>
+					</div>
+				</div>
+		</div>
+		<!-- Chargement des libs js -->
+		<script src="js/jquery/jquery.js"></script>
+		
+		<!-- Chargement de l'application -->
+		<script src="js/app/init.js"></script>
+		<script src="js/app/perceptron.js"></script>
+		<script src="js/app/canvas.js"></script>	
+	</body>
+</html>

@@ -1,0 +1,14 @@
+* {
+  border-radius: 0 !important;
+  font-family: "Open Sans";
+}
+
+.title {
+	border-bottom: 3px solid #216497;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.underlined {
+	text-decoration: underline;
+}
